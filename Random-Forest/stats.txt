@@ -1,0 +1,23 @@
+Training Features Shape: (1199, 11)
+Training Labels Shape: (1199,)
+Testing Features Shape: (400, 11)
+Testing Labels Shape: (400,)
+
+Mean Absolute Error: 0.42 degrees.
+Accuracy: 92.27 %.
+
+#Variable Importance
+Variable: alcohol              Importance: 0.29
+Variable: sulphates            Importance: 0.14
+Variable: volatile acidity     Importance: 0.11
+Variable: total sulfur dioxide Importance: 0.08
+Variable: chlorides            Importance: 0.07
+Variable: residual sugar       Importance: 0.06
+Variable: pH                   Importance: 0.06
+Variable: fixed acidity        Importance: 0.05
+Variable: citric acid          Importance: 0.05
+Variable: density              Importance: 0.05
+Variable: free sulfur dioxide  Importance: 0.04
+# Accuracy Using only 2 most important variables
+Mean Absolute Error: 0.54 degrees.
+Accuracy using Important Variables: 90.2 %.
