@@ -1,0 +1,61 @@
+ID,Variable 1,Dependency,Variable 2
+1,fixed acidity,->,volatile acidity
+2,fixed acidity,->,citric acid
+3,fixed acidity,->,residual sugar
+4,fixed acidity,->,chlorides
+5,fixed acidity,->,free sulfur dioxide
+6,fixed acidity,->,pH
+7,fixed acidity,->,sulphates
+8,fixed acidity,->,alcohol
+9,volatile acidity,->,fixed acidity
+10,volatile acidity,->,citric acid
+11,volatile acidity,->,residual sugar
+12,volatile acidity,->,chlorides
+13,volatile acidity,->,free sulfur dioxide
+14,volatile acidity,->,total sulfur dioxide
+15,volatile acidity,->,density
+16,volatile acidity,->,pH
+17,volatile acidity,->,alcohol
+18,citric acid,->,fixed acidity
+19,citric acid,->,volatile acidity
+20,citric acid,->,residual sugar
+21,citric acid,->,chlorides
+22,citric acid,->,free sulfur dioxide
+23,citric acid,->,total sulfur dioxide
+24,citric acid,->,density
+25,citric acid,->,pH
+26,citric acid,->,alcohol
+27,residual sugar,->,fixed acidity
+28,residual sugar,->,density
+29,residual sugar,->,pH
+30,residual sugar,->,sulphates
+31,residual sugar,->,alcohol
+32,chlorides,->,fixed acidity
+33,chlorides,->,volatile acidity
+34,chlorides,->,citric acid
+35,chlorides,->,pH
+36,chlorides,->,sulphates
+37,chlorides,->,alcohol
+38,free sulfur dioxide,->,chlorides
+39,free sulfur dioxide,->,total sulfur dioxide
+40,free sulfur dioxide,->,density
+41,free sulfur dioxide,->,pH
+42,free sulfur dioxide,->,sulphates
+43,free sulfur dioxide,->,alcohol
+44,total sulfur dioxide,->,alcohol
+45,density,->,fixed acidity
+46,density,->,residual sugar
+47,density,->,chlorides
+48,density,->,free sulfur dioxide
+49,density,->,total sulfur dioxide
+50,density,->,pH
+51,density,->,alcohol
+52,pH,->,fixed acidity
+53,pH,->,chlorides
+54,pH,->,free sulfur dioxide
+55,pH,->,total sulfur dioxide
+56,alcohol,->,fixed acidity
+57,alcohol,->,volatile acidity
+58,alcohol,->,free sulfur dioxide
+59,alcohol,->,total sulfur dioxide
+60,alcohol,->,density
