@@ -7,7 +7,7 @@ import warnings
 import seaborn as sns
 warnings.simplefilter(action='ignore', category=FutureWarning)
 # Importing and taking a quick look
-df=pd.read_csv("winequality-red.csv",sep=";")
+df=pd.read_csv("winequality-white.csv",sep=";")
 #print(df.describe())
 
 #Standardising the data
@@ -29,30 +29,14 @@ finalDf = pd.concat([principalDf, df[['quality']]], axis = 1)
 #print(finalDf.head(5))
 
 print(pca.explained_variance_ratio_)
-#[0.28173931 0.1750827 ] = 45.6% data retention
+#[0.29293217 0.14320363] = 43.6% data retention
 
 #Visualize 2D Projection
-# fig = plt.figure(figsize = (8,8))
-# ax = fig.add_subplot(1,1,1)
-# ax.set_xlabel('Principal Component 1', fontsize = 15)
-# ax.set_ylabel('Principal Component 2', fontsize = 15)
-# ax.set_title('2 Component PCA', fontsize = 20)
-# qualitys = ['5', '6', '4']
-# colors = ['r', 'g', 'b']
-# for target, color in zip(qualitys,colors):
-#     indicesToKeep = finalDf['quality'] == target
-#     ax.scatter(finalDf.loc[indicesToKeep, 'principal component 1']
-#                , finalDf.loc[indicesToKeep, 'principal component 2']
-#                , c = color
-#                , s = 50)
-# ax.legend(qualitys)
-# ax.grid()
-# plt.show()
 plt.figure(figsize=(16,10))
 sns.scatterplot(
     x="principal component 1", y="principal component 2",
     hue='quality',
-    palette=sns.color_palette("hls"),
+    palette=sns.color_palette("muted",7),
     data=finalDf,
     legend="full",
     alpha=0.3
