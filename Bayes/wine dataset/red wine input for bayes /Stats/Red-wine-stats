@@ -1,0 +1,58 @@
+Knowledge Based Graph
+____________________ Inference-based evaluation _____________________
+BIC/MDL score -152523.756
+# of free parameters 27270
+BUILD SUCCESSFUL (total time: 9 seconds)
+
+
+Learned graph
+________________________ Training data info ________________________
+Variables: 11
+Sample size: 1449
+___________________ Knowledge-based constraints ____________________
+Temporal constraints specified: 0
+Directed constraints specified: 0
+_______________________ Structure learning _________________________
+Running SaiyanH with settings:
+    a) Associational score: MeanMax [Absolute]
+    b) Conditional independence pruning: true
+    c) Faithfulness condition pruning: true
+    d) TABU search max escape attempts: V(V-1)
+Entering Phase 1 [EMST graph]...
+marginalDep.csv saved.
+Phase 1 completed.
+Entering Phase 2 [constraint-based learning]...
+conditionalDep.csv saved.
+conditionalIndep.csv saved.
+conditionalInsignificance.csv saved.
+Phase 2 completed.
+Entering Phase 3 [score-based learning]...
+fixedacidity->volatileacidity[label="0.078"];fixedacidity->residualsugar[label="0.072"];fixedacidity->chlorides[label="0.078"];fixedacidity->density[label="0.217"];fixedacidity->pH[label="0.234"];fixedacidity->sulphates[label="0.074"];fixedacidity->alcohol[label="0.073"];volatileacidity->sulphates[label="0.112"];volatileacidity->alcohol[label="0.072"];citricacid->fixedacidity[label="0.230"];citricacid->volatileacidity[label="0.144"];citricacid->residualsugar[label="0.055"];citricacid->pH[label="0.161"];citricacid->sulphates[label="0.103"];citricacid->alcohol[label="0.072"];freesulfurdioxide->citricacid[label="0.077"];freesulfurdioxide->totalsulfurdioxide[label="0.275"];totalsulfurdioxide->citricacid[label="0.080"];density->residualsugar[label="0.137"];density->chlorides[label="0.140"];pH->chlorides[label="0.086"];alcohol->density[label="0.170"];graph[fontname=Arial, fontsize = 10,  label="SaiyanH_Phase_3 graph (final). \lTotal arcs: 22 \l"]
+Phase 3 completed.
+Arcs randomised during phase 2 constraint-based learning: 0
+Structure learning elapsed time: 0 seconds total (Phase 1 = 0 secs, Phase 2 = 0 secs).
+____________________________ Evaluation _____________________________
+Nodes: 11
+Sample size: 1449
+TrueDAG arcs: 60
+TrueDAG independencies: -5
+LearnedDAG arcs: 22
+LearnedDAG independencies: 33
+______________________ Confusion matrix stats _______________________
+Arcs discovered (TP): 12.0
+Partial arcs discovered (TP*0.5): 8.0
+False dependencies discovered (FP): 2.0
+Independencies discovered (TN): -7.0
+Dependencies not discovered (FN): 44.0. [NOTE: # of edges missed is 40.0]
+_____________ Stats from metrics and scoring functions ______________
+Precision score: 0.727
+Recall score: 0.267
+F1 score: 0.390
+SHD score: 46.000
+DDM score: -0.500
+BSF score: 0.667
+# of independent graphical fragments: 1
+____________________ Inference-based evaluation _____________________
+BIC/MDL score -20630.979
+# of free parameters 302
+BUILD SUCCESSFUL (total time: 11 seconds)

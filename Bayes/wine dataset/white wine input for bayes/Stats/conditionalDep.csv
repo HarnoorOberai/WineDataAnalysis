@@ -1,0 +1,15 @@
+density,citric acid,residual sugar,0.07714074911934012
+citric acid,volatile acidity,density,0.053151987635256394
+density,residual sugar,sulphates,0.07137565025291631
+residual sugar,citric acid,density,0.11287959555084856
+density,fixed acidity,residual sugar,0.08322439042909426
+total sulfur dioxide,residual sugar,sulphates,0.053913057249106736
+free sulfur dioxide,volatile acidity,total sulfur dioxide,0.08798273019504908
+pH,fixed acidity,chlorides,0.07332263751548518
+density,volatile acidity,residual sugar,0.11175557791331137
+total sulfur dioxide,volatile acidity,free sulfur dioxide,0.06268313625732798
+fixed acidity,chlorides,pH,0.06261909058051421
+free sulfur dioxide,fixed acidity,total sulfur dioxide,0.06130198871812153
+residual sugar,fixed acidity,density,0.12012264898973775
+residual sugar,volatile acidity,density,0.07697999665356614
+residual sugar,density,sulphates,0.10504519586576955
